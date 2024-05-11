@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telainicia"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/containerInicio"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:background="@drawable/container_login"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPFotoSafe!"
+        android:textSize="25sp"
+        android:textColor="@color/purple"
+        android:textStyle="italic"
+        android:layout_marginTop="86dp"
+        app:layout_constraintTop_toTopOf="@id/containerInicio"
+        app:layout_constraintStart_toStartOf="@id/containerInicio"
+        app:layout_constraintEnd_toEndOf="@id/containerInicio" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guarde seu CPF com segurança"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="@id/containerInicio"
+        app:layout_constraintEnd_toEndOf="@id/containerInicio" />
+
+    <Button
+        android:id="@+id/btOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:backgroundTint="@color/purple"
+        android:padding="15dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="@id/containerInicio"
+        app:layout_constraintStart_toEndOf="@id/containerInicio"
+        app:layout_constraintStart_toStartOf="@id/containerInicio"
+        app:layout_constraintTop_toBottomOf="@id/txtDesc"
+        app:layout_constraintVertical_bias="0.340" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
